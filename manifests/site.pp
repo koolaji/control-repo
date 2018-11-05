@@ -4,6 +4,13 @@ node default {
     content => 'This is a readme',
     owner   => 'root',
   }
+  user{ 'puppet':
+    name       => 'puppet',
+    groups     => 'puppet',
+    managehome => true,
+    password   => '$1$wWXejFYb$jK1ULefOHBEsbYsBXR0.V.',
+    ensure     => present
+  }
 }
 node 'puppet' {
   include role::master_server
