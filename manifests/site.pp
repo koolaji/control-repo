@@ -6,7 +6,7 @@ node default {
   }
   user{ 'puppet':
     name       => 'puppet',
-    groups     => 'puppet',
+    #groups     => 'puppet',
     managehome => true,
     password   => '$1$wWXejFYb$jK1ULefOHBEsbYsBXR0.V.',
     ensure     => present
