@@ -7,4 +7,5 @@ node default {
 }
 node 'puppet' {
   include role::master_server
+  include pa_repo::platform::ubuntu_1604_amd64
 }
