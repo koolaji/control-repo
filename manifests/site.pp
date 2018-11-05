@@ -6,6 +6,6 @@ node default {
   }
 }
 node 'puppet' {
-  #include role::master_server
-  include pe_repo::platform::ubuntu_1604_amd64
+  include role::master_server
+  #include pe_repo::platform::ubuntu_1604_amd64
 }
